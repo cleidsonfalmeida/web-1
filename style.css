@@ -1,5 +1,17 @@
-p {
-    font-family: verdana;
-    font-size: 20px;
-    color: blue;
-  }
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
