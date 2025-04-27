@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Distâncias</title>
+</head>
+<body>
+    <h1>Conversor de Distâncias</h1>
+    <form action="ConversorServlet" method="post">
+        <label for="opcao">Escolha a conversão:</label>
+        <select name="opcao" id="opcao" required>
+            <option value="mi-m">Milhas para Metros</option>
+            <option value="m-mi">Metros para Milhas</option>
+            <option value="ft-m">Pés para Metros</option>
+            <option value="m-ft">Metros para Pés</option>
+        </select><br><br>
+
+        <label for="valor">Valor:</label>
+        <input type="number" step="any" name="valor" id="valor"><br><br>
+
+        <input type="submit" value="Converter">
+    </form>
+</body>
+</html>
