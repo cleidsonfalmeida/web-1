@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Conversão</title></head>
+    <body>
+        <h2 th:text="#{conversao.titulo}">Conversão de Distâncias</h2>
+        <form th:action="@{/}" method="post" th:object="${conversao}">
+            <label th:text="#{conversao.opcao}">Opção:</label>
+            <select th:field="*{opcao}">
+                <option value="mi-m" th:text="#{opcao.mi.m}"></option>
+                <option value="m-mi" th:text="#{opcao.m.mi}"></option>
+                <option value="ft-m" th:text="#{opcao.ft.m}"></option>
+                <option value="m-ft" th:text="#{opcao.m.ft}"></option>
+            </select><br/>
+            <label th:text="#{conversao.valor}">Valor:</label>
+            <input type="number" step="any" th:field="*{valor}"/><br/>
+            <button type="submit" th:text="#{conversao.botao}">Converter</button>
+
+            <!-- <a href="?lang=pt">Português</a> |
+            <a href="?lang=en">English</a> -->
+        </form>
+
+    </body>
+</html>
