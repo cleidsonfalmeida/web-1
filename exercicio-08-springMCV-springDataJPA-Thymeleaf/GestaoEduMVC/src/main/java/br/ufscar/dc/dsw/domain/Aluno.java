@@ -50,6 +50,10 @@ public class Aluno extends AbstractEntity<Long> {
     )
     private List<Disciplina> disciplinas;
 
+    public Aluno() {
+        this.disciplinas = new java.util.ArrayList<>();
+    }
+
     // Getters e Setters
 
     public String getNome() {
