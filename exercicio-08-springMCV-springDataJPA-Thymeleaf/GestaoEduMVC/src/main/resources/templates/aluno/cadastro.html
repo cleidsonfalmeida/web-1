@@ -88,10 +88,13 @@
 
                     <div class="form-group col-md-6">
 						<label for="nome">Data de Nascimento</label> 
-						<input type="text" class="form-control" id="nome" placeholder="Data de Nascimento"
-							ata-mask="0000-00-00" data-mask-reverse="true" autofocus="autofocus" th:field="*{dataNascimento}"
-							th:classappend="${#fields.hasErrors('dataNascimento')} ? is-invalid" />
+						<input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="aaaa/mm/dd"
+                            data-mask="0000/00/00" data-mask-reverse="true" autofocus="autofocus" 
+                            th:value="${#dates.format(aluno.dataNascimento, 'yyyy/MM/dd')}"
+                            th:classappend="${#fields.hasErrors('dataNascimento')} ? 'is-invalid'" 
+                            aria-describedby="dataHelp"/>
 
+                        <small id="dataHelp" class="form-text text-muted">Formato: yyyy/MM/dd</small>
 						<div class="invalid-feedback">
 							<span th:errors="*{dataNascimento}"></span>
 						</div>

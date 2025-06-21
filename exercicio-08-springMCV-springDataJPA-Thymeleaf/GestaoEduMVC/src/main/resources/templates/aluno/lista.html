@@ -49,7 +49,7 @@
                             </td>
 							<td th:text="${aluno.matricula}"></td>
                             <td th:text="${aluno.email}"></td>
-                            <td th:text="${aluno.dataNascimento}"></td>
+                            <td th:text="${#dates.format(aluno.dataNascimento, 'yyyy/MM/dd')}"></td>
 						
 							<td colspan="2">
 								<a class="btn btn-info btn-sm"

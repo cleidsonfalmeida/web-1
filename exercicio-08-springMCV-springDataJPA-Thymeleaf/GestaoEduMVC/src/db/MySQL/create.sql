@@ -29,16 +29,16 @@ CREATE TABLE matricula (
 );
 
 INSERT INTO aluno (nome, cpf, matricula, email, data_nascimento) VALUES
-('Alice Silva', '123.456.789-00', 'MAT001', 'alice@example.com', '2005-01-15'),
-('Bruno Costa', '234.567.890-11', 'MAT002', 'bruno@example.com', '2004-03-22'),
-('Carla Mendes', '345.678.901-22', 'MAT003', 'carla@example.com', '2005-07-11'),
-('Diego Lima', '456.789.012-33', 'MAT004', 'diego@example.com', '2003-09-30'),
-('Eduarda Souza', '567.890.123-44', 'MAT005', 'eduarda@example.com', '2005-05-19'),
-('Felipe Torres', '678.901.234-55', 'MAT006', 'felipe@example.com', '2004-12-02'),
-('Gabriela Rocha', '789.012.345-66', 'MAT007', 'gabriela@example.com', '2005-10-10'),
-('Henrique Dias', '890.123.456-77', 'MAT008', 'henrique@example.com', '2003-06-27'),
-('Isabela Martins', '901.234.567-88', 'MAT009', 'isabela@example.com', '2004-11-05'),
-('João Pereira', '012.345.678-99', 'MAT010', 'joao@example.com', '2005-02-08');
+('Alice Silva', '123.456.789-00', 'MAT001', 'alice@example.com', '2005/01/15'),
+('Bruno Costa', '234.567.890-11', 'MAT002', 'bruno@example.com', '2004/03/22'),
+('Carla Mendes', '345.678.901-22', 'MAT003', 'carla@example.com', '2005/07/11'),
+('Diego Lima', '456.789.012-33', 'MAT004', 'diego@example.com', '2003/09/30'),
+('Eduarda Souza', '567.890.123-44', 'MAT005', 'eduarda@example.com', '2005/05/19'),
+('Felipe Torres', '678.901.234-55', 'MAT006', 'felipe@example.com', '2004/12/02'),
+('Gabriela Rocha', '789.012.345-66', 'MAT007', 'gabriela@example.com', '2005/10/10'),
+('Henrique Dias', '890.123.456-77', 'MAT008', 'henrique@example.com', '2003/06/27'),
+('Isabela Martins', '901.234.567-88', 'MAT009', 'isabela@example.com', '2004/11/05'),
+('João Pereira', '012.345.678-99', 'MAT010', 'joao@example.com', '2005/02/08');
 
 
 INSERT INTO disciplina (nome, codigo, professor_responsavel) VALUES
