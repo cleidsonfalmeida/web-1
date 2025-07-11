@@ -36,4 +36,9 @@ public class DisciplinaService implements IDisciplinaService {
 	public boolean disciplinaTemAlunos(Long id) {
 		return !dao.findById(id.longValue()).getAlunos().isEmpty(); 
 	}
+
+	@Override
+    public Disciplina buscarPorNome(String nome) {
+        return dao.findByNome(nome);
+    }
 }

@@ -17,8 +17,8 @@ public class AlunoService implements IAlunoService {
 	@Autowired
 	IAlunoDAO dao;
 	
-	public void salvar(Aluno aluno) {
-		dao.save(aluno);
+	public Aluno salvar(Aluno aluno) {
+		return dao.save(aluno);
 	}
 	
 	public void excluir(Long id) {

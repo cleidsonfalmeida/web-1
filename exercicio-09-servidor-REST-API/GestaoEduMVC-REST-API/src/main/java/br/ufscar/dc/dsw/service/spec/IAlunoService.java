@@ -6,6 +6,6 @@ import br.ufscar.dc.dsw.domain.Aluno;
 public interface IAlunoService {
 	Aluno buscarPorId(Long id);
 	List<Aluno> buscarTodos();
-	void salvar(Aluno livro);
+	Aluno salvar(Aluno livro);
 	void excluir(Long id);
 }

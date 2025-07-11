@@ -7,4 +7,5 @@ public interface IDisciplinaService {
 	void salvar(Disciplina disciplina);
 	void excluir(Long id);
 	boolean disciplinaTemAlunos(Long id);
+	Disciplina buscarPorNome(String nome);
 }

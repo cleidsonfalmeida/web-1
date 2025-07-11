@@ -31,8 +31,6 @@ public class Disciplina extends AbstractEntity<Long> {
     @ManyToMany(mappedBy = "disciplinas")
     private List<Aluno> alunos;
 
-    // Getters e Setters
-
     public String getNome() {
         return nome;
     }

@@ -11,4 +11,5 @@ public interface IDisciplinaDAO extends CrudRepository<Disciplina, Long>{
 	List<Disciplina> findAll();
 	Disciplina save(Disciplina disciplina);
 	void deleteById(Long id);
+	Disciplina findByNome(String nome);
 }
