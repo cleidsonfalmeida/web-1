@@ -14,8 +14,8 @@ public class DisciplinaService implements IDisciplinaService {
 	@Autowired
 	IDisciplinaDAO dao;
 	
-	public void salvar(Disciplina disciplina) {
-		dao.save(disciplina);
+	public Disciplina salvar(Disciplina disciplina) {
+		return dao.save(disciplina);
 	}
 	
 	public void excluir(Long id) {
